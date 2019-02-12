@@ -27,7 +27,7 @@ pipeline {
 
                 sh 'docker image build -t "pndweb:1" -f docker/Dockerfile .'
                 sh 'docker image build -t "pndweb:latest" -f docker/Dockerfile .'
-                sh 'docker run -it "pndweb:latest" python manage.py test'
+                sh 'docker run -i "pndweb:latest" python manage.py test'
             }
         }
         stage ('train') {
