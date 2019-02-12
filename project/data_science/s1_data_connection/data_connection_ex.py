@@ -68,10 +68,3 @@ class VerticaDbData(ABcDataInterface):
         df.set_index(cls.KEY, drop=False)
         return df
 
-
-
-
-
-if __name__=='__main__':
-
-    print(LocalData().get_training_data())

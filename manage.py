@@ -1,4 +1,5 @@
 # manage.py
+import subprocess
 import unittest
 from time import sleep
 
@@ -28,7 +29,7 @@ COV = coverage.coverage(
         "project/server/*/__init__.py",
     ],
 )
-#COV.start()
+COV.start()
 
 
 @cli.command()

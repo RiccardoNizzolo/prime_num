@@ -7,7 +7,7 @@ import numpy as np
 class  TestOrchestrators(TestCase):
 
 
-    def test_fast_training_should_work(self):
+    def test_fast_training_should_works(self):
         for model_name, orchestrator in self.get_untrained_models().items():
             orchestrator.build(data_limit=1000)
 

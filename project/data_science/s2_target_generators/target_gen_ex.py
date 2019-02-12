@@ -30,12 +30,4 @@ class TargetGenTimeSeries(ABcTargetGen):
         online_data=data[[x for x in data.columns if x!=col]]
         return online_data,y
 
-class PrimeNumGenIdentity(ABcTargetGen):
-
-    @staticmethod
-    def generate_target(data=None):
-        col='is_prime'
-        y=data[col]
-        online_data=data[[x for x in data.columns if x!=col]]
-        return online_data,y
 
