@@ -25,7 +25,6 @@ pipeline {
         stage ('Build image and test') {
             steps {
 
-                sh 'ls'
                 sh 'docker image build -t "pndweb:1" -f docker/Dockerfile .'
                 sh 'docker image build -t "pndweb:latest" -f docker/Dockerfile .'
             }
